@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel_Menue = new System.Windows.Forms.Panel();
-            this.Button_Task = new Bunifu.Framework.UI.BunifuFlatButton();
             this.button_OpenLog = new Bunifu.Framework.UI.BunifuImageButton();
             this.button_Settings = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel_ActualPointer = new System.Windows.Forms.Panel();
@@ -49,7 +48,6 @@
             // panel_Menue
             // 
             this.panel_Menue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.panel_Menue.Controls.Add(this.Button_Task);
             this.panel_Menue.Controls.Add(this.button_OpenLog);
             this.panel_Menue.Controls.Add(this.button_Settings);
             this.panel_Menue.Controls.Add(this.panel_ActualPointer);
@@ -61,40 +59,6 @@
             this.panel_Menue.Name = "panel_Menue";
             this.panel_Menue.Size = new System.Drawing.Size(1264, 60);
             this.panel_Menue.TabIndex = 0;
-            // 
-            // Button_Task
-            // 
-            this.Button_Task.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
-            this.Button_Task.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Button_Task.BorderRadius = 0;
-            this.Button_Task.ButtonText = "Tasks";
-            this.Button_Task.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_Task.DisabledColor = System.Drawing.Color.Gray;
-            this.Button_Task.Iconcolor = System.Drawing.Color.Transparent;
-            this.Button_Task.Iconimage = global::ocManager.Properties.Resources.baseline_list_white_48dp;
-            this.Button_Task.Iconimage_right = null;
-            this.Button_Task.Iconimage_right_Selected = null;
-            this.Button_Task.Iconimage_Selected = null;
-            this.Button_Task.IconMarginLeft = 0;
-            this.Button_Task.IconMarginRight = 0;
-            this.Button_Task.IconRightVisible = true;
-            this.Button_Task.IconRightZoom = 0D;
-            this.Button_Task.IconVisible = true;
-            this.Button_Task.IconZoom = 70D;
-            this.Button_Task.IsTab = false;
-            this.Button_Task.Location = new System.Drawing.Point(601, 0);
-            this.Button_Task.Name = "Button_Task";
-            this.Button_Task.Normalcolor = System.Drawing.Color.Empty;
-            this.Button_Task.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
-            this.Button_Task.OnHoverTextColor = System.Drawing.Color.White;
-            this.Button_Task.selected = false;
-            this.Button_Task.Size = new System.Drawing.Size(160, 44);
-            this.Button_Task.TabIndex = 2;
-            this.Button_Task.Text = "Tasks";
-            this.Button_Task.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Task.Textcolor = System.Drawing.Color.White;
-            this.Button_Task.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Task.Click += new System.EventHandler(this.Button_Task_Click);
             // 
             // button_OpenLog
             // 
@@ -306,7 +270,6 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton button_Settings;
         private Bunifu.Framework.UI.BunifuImageButton button_OpenLog;
-        private Bunifu.Framework.UI.BunifuFlatButton Button_Task;
     }
 }
 

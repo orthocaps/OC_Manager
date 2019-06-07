@@ -18,7 +18,6 @@ namespace ocManager
         ucTools tools;
         ucTexts texts;
         ucLog log;
-        ucTasks tasks;
         public MainView()
         {
             //this.Hide();
@@ -44,7 +43,6 @@ namespace ocManager
             tools.Visible = false;
             texts.Visible = false;
             log.Visible = false;
-            tasks.Visible = false;
         }
 
         private void LoadUserControls()
@@ -69,11 +67,6 @@ namespace ocManager
             log = new ucLog();
             panel_Content.Controls.Add(log);
             log.Visible = false;
-
-            //Tasks
-            tasks = new ucTasks();
-            panel_Content.Controls.Add(tasks);
-            tasks.Visible = false;
 
         }
 
