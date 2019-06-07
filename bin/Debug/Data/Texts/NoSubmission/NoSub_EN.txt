@@ -1,0 +1,8 @@
+Dear Dr. %Clinician%, 
+
+we received the impressions of the patient on %Date%. I just wanted to remind you to submit us the data of this patient. We will start with the planning and manufacturing of the iSetups, if we get the data.
+
+If the planning progress begins, will the progress bar of the associated patient on your orthocaps account, get a progress of 5% or 10%.
+
+
+Kind regards
