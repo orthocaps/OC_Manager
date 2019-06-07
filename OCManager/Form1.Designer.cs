@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel_Menue = new System.Windows.Forms.Panel();
-            this.button_OpenLog = new Bunifu.Framework.UI.BunifuImageButton();
-            this.button_Settings = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel_ActualPointer = new System.Windows.Forms.Panel();
-            this.button_OpenTexts = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.button_OpenTools = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.button_OpenExplorer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_Status = new System.Windows.Forms.Panel();
             this.Label_Status = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_Content = new System.Windows.Forms.Panel();
+            this.button_OpenLog = new Bunifu.Framework.UI.BunifuImageButton();
+            this.button_Settings = new Bunifu.Framework.UI.BunifuImageButton();
+            this.button_OpenTexts = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.button_OpenTools = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.button_OpenExplorer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_Menue.SuspendLayout();
+            this.panel_Status.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.button_OpenLog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_Settings)).BeginInit();
-            this.panel_Status.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Menue
@@ -59,6 +59,53 @@
             this.panel_Menue.Name = "panel_Menue";
             this.panel_Menue.Size = new System.Drawing.Size(1264, 60);
             this.panel_Menue.TabIndex = 0;
+            // 
+            // panel_ActualPointer
+            // 
+            this.panel_ActualPointer.BackColor = System.Drawing.Color.White;
+            this.panel_ActualPointer.Location = new System.Drawing.Point(12, 49);
+            this.panel_ActualPointer.Name = "panel_ActualPointer";
+            this.panel_ActualPointer.Size = new System.Drawing.Size(160, 5);
+            this.panel_ActualPointer.TabIndex = 0;
+            // 
+            // panel_Status
+            // 
+            this.panel_Status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.panel_Status.Controls.Add(this.Label_Status);
+            this.panel_Status.Controls.Add(this.label1);
+            this.panel_Status.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_Status.Location = new System.Drawing.Point(0, 653);
+            this.panel_Status.Name = "panel_Status";
+            this.panel_Status.Size = new System.Drawing.Size(1264, 28);
+            this.panel_Status.TabIndex = 1;
+            // 
+            // Label_Status
+            // 
+            this.Label_Status.AutoSize = true;
+            this.Label_Status.ForeColor = System.Drawing.Color.White;
+            this.Label_Status.Location = new System.Drawing.Point(1081, 6);
+            this.Label_Status.Name = "Label_Status";
+            this.Label_Status.Size = new System.Drawing.Size(0, 13);
+            this.Label_Status.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1035, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Status:";
+            // 
+            // panel_Content
+            // 
+            this.panel_Content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel_Content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Content.Location = new System.Drawing.Point(0, 60);
+            this.panel_Content.Name = "panel_Content";
+            this.panel_Content.Size = new System.Drawing.Size(1264, 593);
+            this.panel_Content.TabIndex = 2;
             // 
             // button_OpenLog
             // 
@@ -86,14 +133,6 @@
             this.button_Settings.TabIndex = 1;
             this.button_Settings.TabStop = false;
             this.button_Settings.Zoom = 10;
-            // 
-            // panel_ActualPointer
-            // 
-            this.panel_ActualPointer.BackColor = System.Drawing.Color.White;
-            this.panel_ActualPointer.Location = new System.Drawing.Point(12, 49);
-            this.panel_ActualPointer.Name = "panel_ActualPointer";
-            this.panel_ActualPointer.Size = new System.Drawing.Size(160, 5);
-            this.panel_ActualPointer.TabIndex = 0;
             // 
             // button_OpenTexts
             // 
@@ -197,45 +236,6 @@
             this.button_OpenExplorer.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_OpenExplorer.Click += new System.EventHandler(this.Button_OpenExplorer_Click);
             // 
-            // panel_Status
-            // 
-            this.panel_Status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
-            this.panel_Status.Controls.Add(this.Label_Status);
-            this.panel_Status.Controls.Add(this.label1);
-            this.panel_Status.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_Status.Location = new System.Drawing.Point(0, 653);
-            this.panel_Status.Name = "panel_Status";
-            this.panel_Status.Size = new System.Drawing.Size(1264, 28);
-            this.panel_Status.TabIndex = 1;
-            // 
-            // Label_Status
-            // 
-            this.Label_Status.AutoSize = true;
-            this.Label_Status.ForeColor = System.Drawing.Color.White;
-            this.Label_Status.Location = new System.Drawing.Point(1081, 6);
-            this.Label_Status.Name = "Label_Status";
-            this.Label_Status.Size = new System.Drawing.Size(0, 13);
-            this.Label_Status.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1035, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Status:";
-            // 
-            // panel_Content
-            // 
-            this.panel_Content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel_Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Content.Location = new System.Drawing.Point(0, 60);
-            this.panel_Content.Name = "panel_Content";
-            this.panel_Content.Size = new System.Drawing.Size(1264, 593);
-            this.panel_Content.TabIndex = 2;
-            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,15 +244,17 @@
             this.Controls.Add(this.panel_Content);
             this.Controls.Add(this.panel_Status);
             this.Controls.Add(this.panel_Menue);
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "MainView";
             this.ShowIcon = false;
             this.Text = "Orthocaps Manager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainView_FormClosing);
             this.panel_Menue.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.button_OpenLog)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.button_Settings)).EndInit();
             this.panel_Status.ResumeLayout(false);
             this.panel_Status.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.button_OpenLog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.button_Settings)).EndInit();
             this.ResumeLayout(false);
 
         }

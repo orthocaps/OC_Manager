@@ -45,6 +45,7 @@
             this.button_EditCaseFolder = new Bunifu.Framework.UI.BunifuImageButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button_DragDrop = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.button_Assist = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.button_Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_OpenCaseFolder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_EditCaseFolder)).BeginInit();
@@ -285,11 +286,46 @@
             this.button_DragDrop.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_DragDrop.Click += new System.EventHandler(this.Button_DragDrop_Click);
             // 
+            // button_Assist
+            // 
+            this.button_Assist.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.button_Assist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.button_Assist.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Assist.BorderRadius = 0;
+            this.button_Assist.ButtonText = "Start Assist";
+            this.button_Assist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_Assist.DisabledColor = System.Drawing.Color.Gray;
+            this.button_Assist.Iconcolor = System.Drawing.Color.Transparent;
+            this.button_Assist.Iconimage = null;
+            this.button_Assist.Iconimage_right = null;
+            this.button_Assist.Iconimage_right_Selected = null;
+            this.button_Assist.Iconimage_Selected = null;
+            this.button_Assist.IconMarginLeft = 0;
+            this.button_Assist.IconMarginRight = 0;
+            this.button_Assist.IconRightVisible = true;
+            this.button_Assist.IconRightZoom = 0D;
+            this.button_Assist.IconVisible = true;
+            this.button_Assist.IconZoom = 70D;
+            this.button_Assist.IsTab = false;
+            this.button_Assist.Location = new System.Drawing.Point(1000, 535);
+            this.button_Assist.Name = "button_Assist";
+            this.button_Assist.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.button_Assist.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(55)))), ((int)(((byte)(65)))));
+            this.button_Assist.OnHoverTextColor = System.Drawing.Color.White;
+            this.button_Assist.selected = false;
+            this.button_Assist.Size = new System.Drawing.Size(160, 44);
+            this.button_Assist.TabIndex = 10;
+            this.button_Assist.Text = "Start Assist";
+            this.button_Assist.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button_Assist.Textcolor = System.Drawing.Color.White;
+            this.button_Assist.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // ucExplorer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.button_Assist);
             this.Controls.Add(this.button_DragDrop);
             this.Controls.Add(this.button_GetData);
             this.Controls.Add(this.button_SendScans);
@@ -332,5 +368,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton button_GetData;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private Bunifu.Framework.UI.BunifuFlatButton button_DragDrop;
+        private Bunifu.Framework.UI.BunifuFlatButton button_Assist;
     }
 }

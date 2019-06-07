@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assist\Scan_sender_Assist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assist\Scan_sender_Assist.Designer.cs">
+      <DependentUpon>Scan_sender_Assist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\ContentManager.cs" />
     <Compile Include="Classes\DialogManager.cs" />
     <Compile Include="Classes\ExplorerElement.cs" />
@@ -142,6 +148,9 @@
     <Compile Include="UserControls\ucTools.Designer.cs">
       <DependentUpon>ucTools.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Assist\Scan_sender_Assist.resx">
+      <DependentUpon>Scan_sender_Assist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SetScanName.resx">
       <DependentUpon>SetScanName.cs</DependentUpon>
     </EmbeddedResource>
