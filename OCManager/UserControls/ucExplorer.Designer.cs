@@ -43,8 +43,8 @@
             this.button_Back = new Bunifu.Framework.UI.BunifuImageButton();
             this.button_OpenCaseFolder = new Bunifu.Framework.UI.BunifuImageButton();
             this.button_EditCaseFolder = new Bunifu.Framework.UI.BunifuImageButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button_DragDrop = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.button_Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_OpenCaseFolder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_EditCaseFolder)).BeginInit();
@@ -245,27 +245,52 @@
             this.button_EditCaseFolder.Zoom = 10;
             this.button_EditCaseFolder.Click += new System.EventHandler(this.Button_EditCaseFolder_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1040, 230);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Multiselect = true;
+            // 
+            // button_DragDrop
+            // 
+            this.button_DragDrop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.button_DragDrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.button_DragDrop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_DragDrop.BorderRadius = 0;
+            this.button_DragDrop.ButtonText = "Drag Drop Files";
+            this.button_DragDrop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_DragDrop.DisabledColor = System.Drawing.Color.Gray;
+            this.button_DragDrop.Iconcolor = System.Drawing.Color.Transparent;
+            this.button_DragDrop.Iconimage = null;
+            this.button_DragDrop.Iconimage_right = null;
+            this.button_DragDrop.Iconimage_right_Selected = null;
+            this.button_DragDrop.Iconimage_Selected = null;
+            this.button_DragDrop.IconMarginLeft = 0;
+            this.button_DragDrop.IconMarginRight = 0;
+            this.button_DragDrop.IconRightVisible = true;
+            this.button_DragDrop.IconRightZoom = 0D;
+            this.button_DragDrop.IconVisible = true;
+            this.button_DragDrop.IconZoom = 70D;
+            this.button_DragDrop.IsTab = false;
+            this.button_DragDrop.Location = new System.Drawing.Point(1000, 155);
+            this.button_DragDrop.Name = "button_DragDrop";
+            this.button_DragDrop.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(45)))));
+            this.button_DragDrop.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(55)))), ((int)(((byte)(65)))));
+            this.button_DragDrop.OnHoverTextColor = System.Drawing.Color.White;
+            this.button_DragDrop.selected = false;
+            this.button_DragDrop.Size = new System.Drawing.Size(160, 44);
+            this.button_DragDrop.TabIndex = 9;
+            this.button_DragDrop.Text = "Drag Drop Files";
+            this.button_DragDrop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button_DragDrop.Textcolor = System.Drawing.Color.White;
+            this.button_DragDrop.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_DragDrop.Click += new System.EventHandler(this.Button_DragDrop_Click);
             // 
             // ucExplorer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_DragDrop);
             this.Controls.Add(this.button_GetData);
             this.Controls.Add(this.button_SendScans);
             this.Controls.Add(this.button_Back);
@@ -305,7 +330,7 @@
         private Bunifu.Framework.UI.BunifuImageButton button_Back;
         private Bunifu.Framework.UI.BunifuFlatButton button_SendScans;
         private Bunifu.Framework.UI.BunifuFlatButton button_GetData;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Bunifu.Framework.UI.BunifuFlatButton button_DragDrop;
     }
 }

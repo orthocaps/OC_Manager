@@ -29,6 +29,7 @@ namespace ocManager
             LoadUserControls();
             panel_ActualPointer.Visible = false;
             Splash.Abort();
+            LogManager.loadLogFromFile();
         }
 
         public void StartForm()

@@ -78,7 +78,7 @@ namespace ocManager
             }
             catch(Exception ex)
             {
-                LogManager.addToLog("Loading: " + ex.Message);
+                LogManager.addToLog(LogCategories.Loading + " " + ex.Message);
             }
 
         }

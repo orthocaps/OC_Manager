@@ -67,7 +67,7 @@ namespace ocManager.UserControls
             }
             catch(Exception ex)
             {
-                LogManager.addToLog("Loading: " + ex.Message);
+                LogManager.addToLog(LogCategories.Loading +" "+ ex.Message);
             }
 
 
@@ -102,7 +102,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("Loading: " + ex.Message);
+                LogManager.addToLog(LogCategories.Loading + " " + ex.Message);
             }
         }
 
@@ -134,7 +134,7 @@ namespace ocManager.UserControls
             }
             catch(Exception ex)
             {
-                LogManager.addToLog("Loading: " + ex.Message);
+                LogManager.addToLog(LogCategories.Loading + " " + ex.Message);
             }
 
         }
@@ -152,7 +152,7 @@ namespace ocManager.UserControls
             }
             catch(Exception ex)
             {
-                LogManager.addToLog("Loading: " + ex.Message);
+                LogManager.addToLog(LogCategories.Loading + " " + ex.Message);
             }
 
         }
@@ -199,7 +199,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("General: " + ex.Message);
+                LogManager.addToLog(LogCategories.General + " " + ex.Message);
             }
         }
 
@@ -233,7 +233,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("General: " + ex.Message);
+                LogManager.addToLog(LogCategories.General + " " + ex.Message);
             }
         }
 
@@ -252,7 +252,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("General: " + ex.Message);
+                LogManager.addToLog(LogCategories.General + " " + ex.Message);
             }
         }
 
@@ -272,7 +272,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("General: " + ex.Message);
+                LogManager.addToLog(LogCategories.General + " " + ex.Message);
             }
 
         }
@@ -302,7 +302,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("General: " + ex.Message);
+                LogManager.addToLog(LogCategories.General + " " + ex.Message);
             }
         }
 
@@ -332,7 +332,7 @@ namespace ocManager.UserControls
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("General: " + ex.Message);
+                LogManager.addToLog(LogCategories.General + " " + ex.Message);
             }
         }
 
@@ -404,13 +404,13 @@ namespace ocManager.UserControls
                         Console.WriteLine("Folder Copied: " + newFolderToSend + " --> " + ContentManager.FilesFromOrthocapsFolderPath + @"\" + CustomFolderName);
                         //StatusLabel.Content = "Scans sent";
                         //statusTimer.Start();
-                        LogManager.addToLog("SendScans: " + newFolderToSend + " wurde geschickt");
+                        LogManager.addToLog(LogCategories.SendScans + " " + newFolderToSend + " wurde geschickt");
                     }
                 }
             }
             catch(Exception ex)
             {
-                LogManager.addToLog("SendScans: " + ex.Message);
+                LogManager.addToLog(LogCategories.SendScans + " " + ex.Message);
             }
         }
 
@@ -441,11 +441,11 @@ namespace ocManager.UserControls
 
                     }
                 }
-                LogManager.addToLog("GetData: Data was moved for ID  " + ContentManager.actualCaseID);
+                LogManager.addToLog(LogCategories.GetData + " "+" Data was moved for ID  " + ContentManager.actualCaseID);
             }
             catch (Exception ex)
             {
-                LogManager.addToLog("GetData: " + ex.Message);
+                LogManager.addToLog(LogCategories.GetData + " " + ex.Message);
             }
         }
 
@@ -505,10 +505,10 @@ namespace ocManager.UserControls
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button_DragDrop_Click(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = ContentManager.actualPath;
-            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
             }
         }
