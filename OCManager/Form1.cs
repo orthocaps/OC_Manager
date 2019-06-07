@@ -18,12 +18,13 @@ namespace ocManager
         ucTools tools;
         ucTexts texts;
         ucLog log;
+        ucLogin login;
         public MainView()
         {
             this.Hide();
             Thread Splash = new Thread(new ThreadStart(StartForm));
             Splash.Start();
-            Thread.Sleep(5000);
+            //Thread.Sleep(5000);
             InitializeComponent();
             ContentManager.LoadAllCases();
             LoadUserControls();
@@ -43,6 +44,7 @@ namespace ocManager
             tools.Visible = false;
             texts.Visible = false;
             log.Visible = false;
+            login.Visible = false;
         }
 
         private void LoadUserControls()
@@ -67,6 +69,11 @@ namespace ocManager
             log = new ucLog();
             panel_Content.Controls.Add(log);
             log.Visible = false;
+
+            //Login
+            login = new ucLogin();
+            panel_Content.Controls.Add(login);
+            login.Visible = true;
         }
 
         private void Button_OpenExplorer_Click(object sender, EventArgs e)
