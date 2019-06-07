@@ -1,4 +1,0 @@
-Im Anhang finden Sie eine PDF-Datei, die den Fortschritt der Behandlung darstellt. 
-Das Modell der letzten CAPS und die aktuelle Situation wurden überlagert. 
-- Grün stellt hier keine Abweichung dar. Hier stimmt die aktuelle Situation mit dem geplanten Ziel überein.
-- Rot und Blau stellen Abweichungen dar. Hier stimmt die aktuelle Situation nicht mit dem geplanten Ziel überein. Die Behandlung weicht hier ab. 
