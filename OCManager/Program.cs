@@ -15,23 +15,8 @@ namespace ocManager
         [STAThread]
         static void Main()
         {
-            Thread Splash = new Thread(new ThreadStart(StartForm));
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Splash.Start();
-            Thread.Sleep(5000);
-            Thread programm = new Thread(new ThreadStart(StartProgramm));
-            programm.Start();
-            Splash.Abort();
-        }
-        //Splashscreen
-        static void StartForm()
-        {            
-            Application.Run(new LoadingScreen.SplashScreen());
-        }
-        //Mainprogramm
-        static void StartProgramm()
-        {
             Application.Run(new MainView());
         }
     }

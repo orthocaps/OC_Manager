@@ -521,5 +521,14 @@ namespace ocManager.UserControls
 
             DoDragDrop(data, DragDropEffects.Copy);
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = ContentManager.actualPath;
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

@@ -43,6 +43,8 @@
             this.button_Back = new Bunifu.Framework.UI.BunifuImageButton();
             this.button_OpenCaseFolder = new Bunifu.Framework.UI.BunifuImageButton();
             this.button_EditCaseFolder = new Bunifu.Framework.UI.BunifuImageButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.button_Back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_OpenCaseFolder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button_EditCaseFolder)).BeginInit();
@@ -244,11 +246,27 @@
             this.button_EditCaseFolder.Zoom = 10;
             this.button_EditCaseFolder.Click += new System.EventHandler(this.Button_EditCaseFolder_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1040, 230);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Multiselect = true;
+            // 
             // ucExplorer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_GetData);
             this.Controls.Add(this.button_SendScans);
             this.Controls.Add(this.button_Back);
@@ -288,5 +306,7 @@
         private Bunifu.Framework.UI.BunifuImageButton button_Back;
         private Bunifu.Framework.UI.BunifuFlatButton button_SendScans;
         private Bunifu.Framework.UI.BunifuFlatButton button_GetData;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

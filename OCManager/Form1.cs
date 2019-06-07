@@ -21,14 +21,14 @@ namespace ocManager
         public MainView()
         {
             this.Hide();
-            //Thread Splash = new Thread(new ThreadStart(StartForm));
-            //Splash.Start();
-            //Thread.Sleep(5000);
+            Thread Splash = new Thread(new ThreadStart(StartForm));
+            Splash.Start();
+            Thread.Sleep(5000);
             InitializeComponent();
             ContentManager.LoadAllCases();
             LoadUserControls();
             panel_ActualPointer.Visible = false;
-            //Splash.Abort();
+            Splash.Abort();
         }
 
         public void StartForm()
