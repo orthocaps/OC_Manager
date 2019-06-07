@@ -16,7 +16,6 @@ namespace ocManager.LoadingScreen
         {
             InitializeComponent();
             pictureBox1.Image = new Bitmap(ContentManager.Path_OCLogo);
-            Console.WriteLine("test");
         }
     }
 }
