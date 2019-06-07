@@ -18,12 +18,13 @@ namespace ocManager
         ucTools tools;
         ucTexts texts;
         ucLog log;
+        ucTasks tasks;
         public MainView()
         {
             this.Hide();
             Thread Splash = new Thread(new ThreadStart(StartForm));
             Splash.Start();
-            Thread.Sleep(5000);
+            //Thread.Sleep(5000);
             InitializeComponent();
             ContentManager.LoadAllCases();
             LoadUserControls();
@@ -43,6 +44,7 @@ namespace ocManager
             tools.Visible = false;
             texts.Visible = false;
             log.Visible = false;
+            tasks.Visible = false;
         }
 
         private void LoadUserControls()
@@ -67,6 +69,12 @@ namespace ocManager
             log = new ucLog();
             panel_Content.Controls.Add(log);
             log.Visible = false;
+
+            //Tasks
+            tasks = new ucTasks();
+            panel_Content.Controls.Add(tasks);
+            tasks.Visible = false;
+
         }
 
         private void Button_OpenExplorer_Click(object sender, EventArgs e)
@@ -110,10 +118,20 @@ namespace ocManager
             panel_ActualPointer.Visible = true;
             panel_ActualPointer.Width = button_OpenLog.Width;
         }
-
+        private void Button_Task_Click(object sender, EventArgs e)
+        {
+            //When Button Tasks is clicked
+            HideAllControls();
+            tasks.Visible = true;
+            panel_ActualPointer.Location = new Point(Button_Task.Location.X, Button_Task.Location.Y + Button_Task.Height + 5);
+            panel_ActualPointer.Visible = true;
+            panel_ActualPointer.Width = Button_Task.Width;
+        }
         private void MainView_FormClosing(object sender, FormClosingEventArgs e)
         {
             LogManager.WriteLogFile();
         }
+
+
     }
 }
