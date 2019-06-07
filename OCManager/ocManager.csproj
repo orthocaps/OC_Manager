@@ -187,6 +187,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OCICon.ico" />
+    <None Include="Resources\baseline_list_white_48dp.png" />
+    <None Include="Resources\baseline_list_white_18dp.png" />
     <None Include="Resources\baseline_rate_review_white_48dp.png" />
     <None Include="Resources\baseline_settings_white_48dp.png" />
     <None Include="Resources\baseline_keyboard_backspace_black_48dp.png" />
