@@ -21,7 +21,7 @@ namespace ocManager
         ucTasks tasks;
         public MainView()
         {
-            this.Hide();
+            //this.Hide();
             Thread Splash = new Thread(new ThreadStart(StartForm));
             Splash.Start();
             //Thread.Sleep(5000);
@@ -117,15 +117,6 @@ namespace ocManager
             panel_ActualPointer.Location = new Point(button_OpenLog.Location.X, button_OpenLog.Location.Y + button_OpenLog.Height + 5);
             panel_ActualPointer.Visible = true;
             panel_ActualPointer.Width = button_OpenLog.Width;
-        }
-        private void Button_Task_Click(object sender, EventArgs e)
-        {
-            //When Button Tasks is clicked
-            HideAllControls();
-            tasks.Visible = true;
-            panel_ActualPointer.Location = new Point(Button_Task.Location.X, Button_Task.Location.Y + Button_Task.Height + 5);
-            panel_ActualPointer.Visible = true;
-            panel_ActualPointer.Width = Button_Task.Width;
         }
         private void MainView_FormClosing(object sender, FormClosingEventArgs e)
         {

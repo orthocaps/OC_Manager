@@ -130,12 +130,6 @@
     <Compile Include="UserControls\ucLog.Designer.cs">
       <DependentUpon>ucLog.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ucTasks.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\ucTasks.Designer.cs">
-      <DependentUpon>ucTasks.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\ucTexts.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucLog.resx">
       <DependentUpon>ucLog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ucTasks.resx">
-      <DependentUpon>ucTasks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucTexts.resx">
       <DependentUpon>ucTexts.cs</DependentUpon>
