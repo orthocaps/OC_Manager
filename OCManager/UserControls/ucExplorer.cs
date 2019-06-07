@@ -505,29 +505,11 @@ namespace ocManager.UserControls
 
         }
 
-        private void ListView_Explorer_MouseDown(object sender, MouseEventArgs e)
-        {
-            List<string> chosenItems = new List<string>();
-            foreach (ListViewItem item in listView_Explorer.SelectedItems)
-            {
-                chosenItems.Add(ContentManager.actualPath + @"\" + item.Text);
-            }
-
-            DataObject data = new DataObject(DataFormats.FileDrop, chosenItems);
-            foreach (var item in chosenItems)
-            {
-                data.SetData(DataFormats.StringFormat, item);
-            }
-
-            DoDragDrop(data, DragDropEffects.Copy);
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = ContentManager.actualPath;
             if(openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-
             }
         }
     }

@@ -96,7 +96,6 @@
             this.listView_Explorer.DragLeave += new System.EventHandler(this.ListView_Explorer_DragLeave);
             this.listView_Explorer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ListView_Explorer_KeyDown);
             this.listView_Explorer.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListView_Explorer_MouseDoubleClick_1);
-            this.listView_Explorer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ListView_Explorer_MouseDown);
             this.listView_Explorer.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ListView_Explorer_MouseMove);
             // 
             // columnHeader_Name
